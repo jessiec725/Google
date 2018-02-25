@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Google</title>
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <style>
+  .grid-container {
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+grid-template-rows: 130px 130px;
+padding: 0;
+margin:10;
+grid-gap: 5px;
+}
+.grid-item {
+background-color: white;
+padding: 0px;
+margin-top:80px;
+font-size: 30px;
+text-align: center;
+}
+  </style>
+  </head>
+  <body>
+    <ul>
+      <li><a>Sign In</a></li>
+      <li><a>Images</a></li>
+      <li><a>Gmail</a></li>
+    </ul>
+    <div id="container">
+      <div id="search">
+        <img src="https://cdn.vox-cdn.com/thumbor/Pkmq1nm3skO0-j693JTMd7RL0Zk=/0x0:2012x1341/1200x800/filters:focal(0x0:2012x1341)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" width="400px">
+        <input type="text" placeholder="Search Google or Input URL">
+      </div><!--search end-->
+      <div id="recent">
+        <div class="grid-container">
+        <div class="grid-item" ><img src="https://farm2.staticflickr.com/1443/25852412696_1e4843b4a9_z.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" width="200px" height="125px" ></div>
+        <div class="grid-item" ><img  src="http://4.bp.blogspot.com/-bahoT9-tRn4/UYQmxSCtFdI/AAAAAAAAA6s/QQzILTQba18/s1600/art-camera-cool-photography-toy-Favim.com-446299.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" width="200px" height="125px" ></div>
+        <div class="grid-item" ><img src="https://i.pinimg.com/736x/73/a3/b3/73a3b33deda75f89c680116812928dd6--clarks-ocean-waves.jpg"onclick="openModal();currentSlide(3)" class="hover-shadow cursor" width="200px" height="125px" ></div>
+        <div class="grid-item" ><img src="http://s3.india.com/travel/wp-content/uploads/2015/11/travel-photography-tips1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" width="200px" height="125px" ></div>
+        <div class="grid-item" ><img src="https://www.shutterbug.com/images/1216frame001.jpg"onclick="openModal();currentSlide(5)" class="hover-shadow cursor"  width="200px" height="125px"></div>
+        <div class="grid-item"><img src="http://mycoolhomepage.com/wp-content/uploads/2015/03/jane-field-lewis-cool-photography-how-to-take-cool-photographs-636x310.gif"onclick="openModal();currentSlide(6)" class="hover-shadow cursor" width="200px" height="125px"></div>
+        <div class="grid-item"><img src="https://favim.com/orig/201108/27/coca-in-life-coke-cool-photography-Favim.com-132016.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"width="200px" height="125px"></div>
+        <div class="grid-item"><img src="https://s1.favim.com/orig/26/cool-photography-pink-pool-spray-Favim.com-226316.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"width="200px" height="125px"></div>
+      </div><!--grid end-->
+      </div><!--recent end-->
+
+    </div><!--Container end-->
+  </body>
+</html>
